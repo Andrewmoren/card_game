@@ -3,4 +3,5 @@ export const startGame = (difficult) => {
   let secondCard = null;
   let clickable = true;
   const gameSection = document.querySelector(".game-section__container");
+  const gameTable = document.createElement("div");
 };
