@@ -1,4 +1,5 @@
-export const dublicateArray = (array) => array.reduce((res, current), []);
+export const dublicateArray = (array) =>
+  array.reduce((res, current) => res.concat([current, current]), []);
 
 export const createIconsArray = (initialCount) => {
   const cardsIcons = [
