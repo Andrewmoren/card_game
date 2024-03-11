@@ -1,4 +1,4 @@
-import { createIconsArray, dublicateArray } from "./utils.js";
+import { createIconsArray, dublicateArray, shuffle } from "./utils.js";
 
 export const startGame = (difficult) => {
   let firstCard = null;
@@ -8,5 +8,6 @@ export const startGame = (difficult) => {
   const gameTable = document.createElement("div");
   const cardsIcons = createIconsArray(difficult);
   const dublicatedCardsIcons = dublicateArray(cardsIcons);
+  shuffle(dublicatedCardsIcons);
   console.log(dublicatedCardsIcons);
 };
