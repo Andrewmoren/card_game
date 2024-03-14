@@ -8,6 +8,13 @@ export const startGame = (difficult) => {
   const gameTable = document.createElement("div");
   const cardsIcons = createIconsArray(difficult);
   const dublicatedCardsIcons = dublicateArray(cardsIcons);
+  const restartBtn = document.createElement("button");
+
+  gameSection.innerHTML = "";
+  restartBtn.textContent = "Рестарт";
+  gameTable.classList.add("game-table");
+  restartBtn.classList.add("restart-btn");
+
   shuffle(dublicatedCardsIcons);
   console.log(dublicatedCardsIcons);
 };
