@@ -24,6 +24,7 @@ export const startGame = (difficult) => {
   gameSection.append(gameTable, restartBtn);
   const cards = document.querySelector(".game-card");
   cards.forEach((card, index) => {
+  
     card.addEventListener("click", () => {});
   });
 };
