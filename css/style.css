@@ -122,3 +122,12 @@ body {
 .game-card.flip i+i {
     display: none;
 }
+
+.game-card.successfully {
+    background: #76db82;
+}
+
+.game-card:hover {
+    background: #d1d1c0;
+}
+
