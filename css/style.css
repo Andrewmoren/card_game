@@ -109,3 +109,16 @@ body {
 .game-card i+i{
     display: block;
 }
+
+.game-card.flip {
+    background: #5dc6ff !important;
+    transform: perspective(100px) rotateY(180deg);
+}
+
+.game-card.flip {
+    display: block;
+}
+
+.game-card.flip i+i {
+    display: none;
+}
