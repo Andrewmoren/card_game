@@ -22,8 +22,35 @@ export const startGame = (difficult) => {
   );
 
   gameSection.append(gameTable, restartBtn);
-  const cards = document.querySelector(".game-card");
+  const cards = document.querySelectorAll(".game-card");
   cards.forEach((card, index) => {
-    card.addEventListener("click", () => {});
+    card.addEventListener("click", () => {
+      if (clickable == true && !card.classList.contains("successfully")) {
+        card.classList.add("flip");
+
+        if (firstCard == null) {
+          firstCard = index;
+        } else {
+          if (index != firstCard) {
+            secondCard = index;
+            clickable = false;
+          }
+        }
+      }
+
+      if (firstCard != null && secondCard != null && firstCard != secondCard) {
+        if (
+          cards[firstCard].firstElementChild.className ===
+          cards[secondCard].firstElementChild.className
+        ) {
+          cards[firstCard].classList.add("successfully") ===
+            cards[secondCard].classList.add("successfully");
+
+          firstCard = null;
+          secondCard = null;
+          clickable = true;
+        }
+      }
+    });
   });
 };

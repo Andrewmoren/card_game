@@ -115,7 +115,7 @@ body {
     transform: perspective(100px) rotateY(180deg);
 }
 
-.game-card.flip {
+.game-card.flip i {
     display: block;
 }
 
