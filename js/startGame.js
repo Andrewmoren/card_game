@@ -43,12 +43,23 @@ export const startGame = (difficult) => {
           cards[firstCard].firstElementChild.className ===
           cards[secondCard].firstElementChild.className
         ) {
-          cards[firstCard].classList.add("successfully") ===
-            cards[secondCard].classList.add("successfully");
+          setTimeout(() => {
+            cards[firstCard].classList.add("successfully") ===
+              cards[secondCard].classList.add("successfully");
 
-          firstCard = null;
-          secondCard = null;
-          clickable = true;
+            firstCard = null;
+            secondCard = null;
+            clickable = true;
+          }, 500);
+        } else {
+          setTimeout(() => {
+            cards[firstCard].classList.remove("flip") ===
+              cards[secondCard].classList.remove("flip");
+
+            firstCard = null;
+            secondCard = null;
+            clickable = true;
+          }, 500);
         }
       }
     });
