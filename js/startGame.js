@@ -50,7 +50,7 @@ export const startGame = (difficult) => {
             firstCard = null;
             secondCard = null;
             clickable = true;
-          }, 550);
+          }, 500);
         } else {
           setTimeout(() => {
             cards[firstCard].classList.remove("flip") ===
