@@ -1,3 +1,5 @@
+@import url('./confetti.css');
+
 *,
 *::before,
 *::after {
@@ -52,7 +54,8 @@ body {
    color: #fff
 }
 
-.game-menu__difficultBtn {
+.game-menu__difficultBtn, 
+.restart-btn {
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
@@ -64,11 +67,14 @@ body {
     transition: background-color .3s ease-in-out, color .3s ease-in-out;
 }
 
+
+
 .game-menu__difficultBtn::not(:last-child) {
     margin-bottom: 10px;
 }
 
-.game-menu__difficultBtn {
+.game-menu__difficultBtn, 
+.restart-btn {
     padding: 15px 20px;
     margin: 5px;
     background-color: #5dc6ff

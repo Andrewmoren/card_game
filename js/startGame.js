@@ -1,5 +1,6 @@
 import { confetti } from "./confetti.js";
 import { createGameCard } from "./gameCard.js";
+import { createGameMenu } from "./gameMenu.js";
 import { createIconsArray, dublicateArray, shuffle } from "./utils.js";
 
 export const startGame = (difficult) => {
@@ -24,6 +25,9 @@ export const startGame = (difficult) => {
 
   gameSection.append(gameTable, restartBtn);
   const cards = document.querySelectorAll(".game-card");
+
+  restartBtn.addEventListener("click", createGameMenu);
+
   cards.forEach((card, index) => {
     card.addEventListener("click", () => {
       if (clickable == true && !card.classList.contains("successfully")) {
