@@ -66,9 +66,7 @@ body {
     color: #222;
     transition: background-color .3s ease-in-out, color .3s ease-in-out;
 }
-
-
-
+s
 .game-menu__difficultBtn::not(:last-child) {
     margin-bottom: 10px;
 }
