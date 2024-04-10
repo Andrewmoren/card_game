@@ -3,9 +3,11 @@ export const createGameCard = (defaultIcon, flippedCardIcon) => {
   card.classList.add("game-card");
 
   const notFlippedCardI = document.createElement("i");
+
   const flippedCardI = document.createElement("i");
 
   notFlippedCardI.classList.add("fa", `fa-${defaultIcon}`);
+
   flippedCardI.classList.add("fa", `fa-${flippedCardIcon}`);
 
   card.append(flippedCardI, notFlippedCardI);

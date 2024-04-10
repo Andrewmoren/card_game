@@ -5,8 +5,11 @@ export const createGameMenu = () => {
   const gameSection = document.querySelector(".game-section__container");
 
   gameSection.innerHTML = "";
+
   title.textContent = "Выбор сложности";
+
   title.classList.add("game-menu__title");
+
   document.querySelector(".confetti").innerHTML = "";
 
   const createDifficultButton = (difficult) => {

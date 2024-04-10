@@ -62,7 +62,9 @@ export const startGame = (difficult) => {
               cards[secondCard].classList.remove("flip");
 
             firstCard = null;
+
             secondCard = null;
+
             clickable = true;
           }, 550);
         }
